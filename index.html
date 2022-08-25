@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste MI</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Teste</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dolorem, esse aspernatur nesciunt illo delectus quisquam neque est magni qui inventore eos corrupti nisi deleniti in alias ipsam cumque temporibus.
+            </p>
+            <div id="button" onclick="inverter()">Inverter Mundos</div>
+        </div>
+        <div id="inverter" class="normal">
+            <div id="kids">
+                <img src="images/kids-on-the-bike.svg" alt="">
+            </div>
+
+            <div id="monstro">
+                <img src="images/inverted-world-monster.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <script>
+        function inverter(){
+            var invert = document.getElementById('inverter')
+            if(invert.className == 'normal'){
+                invert.classList.remove('normal')
+                invert.classList.add('invert')
+            } else {
+                invert.classList.remove('invert')
+                invert.classList.add('normal')
+            }
+        }
+    </script>
+</body>
+</html>

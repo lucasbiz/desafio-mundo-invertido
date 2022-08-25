@@ -1,0 +1,42 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: gray;
+}
+
+header{
+    text-align: center;
+}
+
+div#monstro > img{
+    transform: rotate(180deg);
+}
+
+div#titulo{
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+#button{
+    background-color: white;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+div.normal{
+    transition: 1s;
+}
+
+div.invert{
+    transform: rotate(180deg);
+    transition: 1s;
+}
