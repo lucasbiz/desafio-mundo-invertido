@@ -8,7 +8,7 @@
     <title>Teste MI</title>
 </head>
 <body>
-    <header>
+    <header id="gray">
         <div id="titulo">
             <img src="images/banner/logo.svg" alt="Imagem contendo a frase 'Mundo Invertido'" class="normal" id="imgi">
             <p class="normal" id="pi">Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! 
@@ -16,27 +16,33 @@
         </div>
         <div id="button" onclick="inverter()">Inverter Mundos</div>
         <div id="inverter" class="normal">
-            <div id="kids">
+            <div id="kids" class="focus">
                 <img src="images/characters/kids-on-the-bike.svg" alt="">
             </div>
 
-            <div id="monstro">
+            <div id="monstro" class="defocus">
                 <img src="images/characters/inverted-world-monster.svg" alt="">
             </div>
         </div>
     </header>
     <script>
         function inverter(){
+
             var invert = document.getElementById('inverter')
             var pi = document.getElementById('pi')
             var imgi = document.getElementById('imgi')
-            if(invert.className == 'normal' && pi.className == 'normal' && imgi.className == 'normal'){
-                invert.classList.remove('normal')
-                invert.classList.add('invert')
-                pi.classList.remove('normal')
-                pi.classList.add('invertz')
-                imgi.classList.remove('normal')
-                imgi.classList.add('invertz')
+            var headergray = document.getElementById('gray')
+            var kids = document.getElementById('kids')
+            var monster = document.getElementById('monstro')
+
+            if(invert.className == 'normal' && pi.className == 'normal' && imgi.className == 'normal' && kids.className == 'focus' && monster.className == 'defocus'){
+                invert.classList.toggle('invert')
+                pi.classList.toggle('invertz')
+                imgi.classList.toggle('invertz')
+                kids.classList.toggle('defocus')
+                monster.classList.remove('defocus')
+                monster.classList.add('focus')
+                headergray.style.filter = 'saturate(0)'
 
             } else {
                 invert.classList.remove('invert')
@@ -45,6 +51,11 @@
                 pi.classList.add('normal')
                 imgi.classList.remove('invertz')
                 imgi.classList.add('normal')
+                kids.classList.remove('defocus')
+                kids.classList.add('focus')
+                monster.classList.remove('focus')
+                monster.classList.add('defocus')
+                headergray.style.filter = 'saturate(1)'
             }
         }
     </script>

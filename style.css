@@ -11,7 +11,7 @@
 
 
 body{
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
 }
 
 header{
@@ -20,9 +20,18 @@ header{
     background-position: center center;
     background-color: white;
     background-size: cover;
-    
-    
 }
+
+@keyframes bw {
+    0% {
+        filter: saturate(1);
+    }
+    100%{
+        filter: saturate(0);
+    }
+}
+
+
 
 div img {
     width: 100%;
@@ -31,6 +40,21 @@ div img {
 
 div#monstro > img{
     transform: rotate(180deg);
+    max-width: 900px;
+}
+
+div#kids{
+    max-width: 900px;
+    margin: auto;
+}
+
+div.focus{
+    filter: opacity(1);
+    transition: 1s;
+}
+div.defocus{
+    filter: opacity(0.3);
+    transition: 1s;
 }
 
 div#titulo{
@@ -75,7 +99,7 @@ div.invert{
 
 div#inverter{
     padding: 20px;
-    margin-top: 100px;
+    margin: 100px 0px;
 }
 p{
     padding: 30px 20px;
