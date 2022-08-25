@@ -10,30 +10,41 @@
 <body>
     <header>
         <div id="titulo">
-            <h1>Teste</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dolorem, esse aspernatur nesciunt illo delectus quisquam neque est magni qui inventore eos corrupti nisi deleniti in alias ipsam cumque temporibus.
+            <img src="images/banner/logo.svg" alt="Imagem contendo a frase 'Mundo Invertido'" class="normal" id="imgi">
+            <p class="normal" id="pi">Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! 
             </p>
-            <div id="button" onclick="inverter()">Inverter Mundos</div>
         </div>
+        <div id="button" onclick="inverter()">Inverter Mundos</div>
         <div id="inverter" class="normal">
             <div id="kids">
-                <img src="images/kids-on-the-bike.svg" alt="">
+                <img src="images/characters/kids-on-the-bike.svg" alt="">
             </div>
 
             <div id="monstro">
-                <img src="images/inverted-world-monster.svg" alt="">
+                <img src="images/characters/inverted-world-monster.svg" alt="">
             </div>
         </div>
     </header>
     <script>
         function inverter(){
             var invert = document.getElementById('inverter')
-            if(invert.className == 'normal'){
+            var pi = document.getElementById('pi')
+            var imgi = document.getElementById('imgi')
+            if(invert.className == 'normal' && pi.className == 'normal' && imgi.className == 'normal'){
                 invert.classList.remove('normal')
                 invert.classList.add('invert')
+                pi.classList.remove('normal')
+                pi.classList.add('invertz')
+                imgi.classList.remove('normal')
+                imgi.classList.add('invertz')
+
             } else {
                 invert.classList.remove('invert')
                 invert.classList.add('normal')
+                pi.classList.remove('invertz')
+                pi.classList.add('normal')
+                imgi.classList.remove('invertz')
+                imgi.classList.add('normal')
             }
         }
     </script>

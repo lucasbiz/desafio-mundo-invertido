@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,6 +16,17 @@ body{
 
 header{
     text-align: center;
+    background-image: url(images/banner/florest.webp);
+    background-position: center center;
+    background-color: white;
+    background-size: cover;
+    
+    
+}
+
+div img {
+    width: 100%;
+    max-width: 1000px;
 }
 
 div#monstro > img{
@@ -23,16 +39,31 @@ div#titulo{
     margin: auto;
 }
 
+div#titulo > img {
+    max-width: 800px;
+}
+
 #button{
-    background-color: white;
+    background-color: transparent;
     width: 250px;
     height: 50px;
     margin: auto;
     line-height: 50px;
     cursor: pointer;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    border: 2px solid red;
+    color: red;
+    font-size: 18px;
 }
 
-div.normal{
+#button:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
+}
+
+div.normal, img.normal, p.normal{
     transition: 1s;
 }
 
@@ -40,3 +71,25 @@ div.invert{
     transform: rotate(180deg);
     transition: 1s;
 }
+
+
+div#inverter{
+    padding: 20px;
+    margin-top: 100px;
+}
+p{
+    padding: 30px 20px;
+    font-family: "Libre Baskerville", serif;
+}
+
+img.invertz{
+    transform: rotateZ(180deg) scaleX(-1);
+    transition: 1s;
+}
+
+p.invertz{
+    transform: rotateZ(180deg) scaleX(-1);
+    transition: 1s;
+}
+
+
