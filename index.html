@@ -8,7 +8,7 @@
     <title>Teste MI</title>
 </head>
 <body>
-    <header id="gray">
+    <header id="gray" class="gray">
         <div id="titulo">
             <img src="images/banner/logo.svg" alt="Imagem contendo a frase 'Mundo Invertido'" class="normal" id="imgi">
             <p class="normal" id="pi">Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! 
@@ -25,39 +25,33 @@
             </div>
         </div>
     </header>
-    <script>
-        function inverter(){
+    <main>
+        <section id="invertedworld">
+            <h2 class="h2"> O MUNDO INVERTIDO </h2>
+            <p>O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazer tudo isso ao nosso mundo.</p>
+        </section>
 
-            var invert = document.getElementById('inverter')
-            var pi = document.getElementById('pi')
-            var imgi = document.getElementById('imgi')
-            var headergray = document.getElementById('gray')
-            var kids = document.getElementById('kids')
-            var monster = document.getElementById('monstro')
+        <section id="vol4">
+            <h2 class="h2">STRANGER THINGS VOL. 4</h2>
+            <p>Mais experientes, os heróis de Stranger Things também precisam enfrentar desafios maiores do que nunca e fazer decisões que vão mudar suas vidas para sempre. Confira ao lado o trailer da quarta temporada.</p>
+        </section>
 
-            if(invert.className == 'normal' && pi.className == 'normal' && imgi.className == 'normal' && kids.className == 'focus' && monster.className == 'defocus'){
-                invert.classList.toggle('invert')
-                pi.classList.toggle('invertz')
-                imgi.classList.toggle('invertz')
-                kids.classList.toggle('defocus')
-                monster.classList.remove('defocus')
-                monster.classList.add('focus')
-                headergray.style.filter = 'saturate(0)'
+        <section id="netflix">
+            <h2 class="h2">A SEGUNDA SÉRIE MAIS ASSISTIDA DA NETFLIX</h2>
+        </section>
 
-            } else {
-                invert.classList.remove('invert')
-                invert.classList.add('normal')
-                pi.classList.remove('invertz')
-                pi.classList.add('normal')
-                imgi.classList.remove('invertz')
-                imgi.classList.add('normal')
-                kids.classList.remove('defocus')
-                kids.classList.add('focus')
-                monster.classList.remove('focus')
-                monster.classList.add('defocus')
-                headergray.style.filter = 'saturate(1)'
-            }
-        }
-    </script>
+        <section id="club">
+            <h2 class="h2">O CLUBE DUNGEONS & DRAGONS</h2>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

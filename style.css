@@ -9,10 +9,16 @@
     padding: 0px;
 }
 
+:root{
+    --letra-normal: "Archivo", sans-serif;
+    --letra-invertido: "Rubik Glitch", sans-serif;
+}
 
 body{
     background-color: rgb(0, 0, 0);
 }
+
+/* CONFIGURAÇÕES DE CABEÇALHO // HEADER CONFIGS */
 
 header{
     text-align: center;
@@ -20,6 +26,13 @@ header{
     background-position: center center;
     background-color: white;
     background-size: cover;
+    transition: 1s;
+}
+
+
+
+img#imgi{
+    padding-top: 50px;
 }
 
 div img {
@@ -29,7 +42,7 @@ div img {
 
 div#monstro > img{
     transform: rotate(180deg);
-    max-width: 900px;
+    max-width: 850px;
 }
 
 div#kids{
@@ -42,7 +55,7 @@ div.focus{
     transition: 1s;
 }
 div.defocus{
-    filter: opacity(0.3);
+    filter: opacity(0.1);
     transition: 1s;
 }
 
@@ -68,12 +81,14 @@ div#titulo > img {
     border: 2px solid red;
     color: red;
     font-size: 18px;
+    transition: 0.5s;
+    margin-top: 50px;
 }
 
 #button:hover{
     background-color: red;
     color: white;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 div.normal, img.normal, p.normal{
@@ -103,6 +118,16 @@ img.invertz{
 p.invertz{
     transform: rotateZ(180deg) scaleX(-1);
     transition: 1s;
+}
+
+/* MAIN CONFIGS */
+
+main{
+    background-color: black;
+}
+
+main h2 {
+    color: red;
 }
 
 
