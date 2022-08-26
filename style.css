@@ -12,6 +12,8 @@
 :root{
     --letra-normal: "Archivo", sans-serif;
     --letra-invertido: "Rubik Glitch", sans-serif;
+    --cor-gradiente: linear-gradient(to bottom, black,white);
+    --cor-normal: black;
 }
 
 body{
@@ -52,11 +54,11 @@ div#kids{
 
 div.focus{
     filter: opacity(1);
-    transition: 1s;
+    transition: 2s;
 }
 div.defocus{
     filter: opacity(0.1);
-    transition: 1s;
+    transition: 2s;
 }
 
 div#titulo{
@@ -92,12 +94,12 @@ div#titulo > img {
 }
 
 div.normal, img.normal, p.normal{
-    transition: 1s;
+    transition: 2s;
 }
 
 div.invert{
     transform: rotate(180deg);
-    transition: 1s;
+    transition: 2s;
 }
 
 
@@ -112,22 +114,26 @@ p{
 
 img.invertz{
     transform: rotateZ(180deg) scaleX(-1);
-    transition: 1s;
+    transition: 2s;
 }
 
 p.invertz{
     transform: rotateZ(180deg) scaleX(-1);
-    transition: 1s;
+    transition: 2s;
 }
 
 /* MAIN CONFIGS */
 
-main{
-    background-color: black;
+main.normalmain{
+    background-image: var(--cor-gradiente);
+}
+main.dark{
+    background-image: var(--cor-normal);
 }
 
 main h2 {
     color: red;
+    font-family: var(--letra-normal);
 }
 
 
