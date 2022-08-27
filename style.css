@@ -178,16 +178,17 @@ section#vol4 > div#vol4 {
 div > iframe{
     border: 2px solid red;
     transform: translate(30px,-10px);
-
-
 }
 
 div#iframe{
     background-color: red;
-    max-width: 100%;
+    max-width: min-content;
 
 
+}
 
+div{
+    display: flex;
 }
 
 @media screen and (min-width: 300px) and (max-width:750px) {
