@@ -12,12 +12,13 @@
 :root{
     --letra-normal: "Archivo", sans-serif;
     --letra-invertido: "Rubik Glitch", sans-serif;
-    --cor-gradiente: linear-gradient(to bottom, black,white);
+    --cor-gradiente: linear-gradient(to bottom, white, white);
     --cor-normal: black;
 }
 
 body{
     background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 
 /* CONFIGURAÇÕES DE CABEÇALHO // HEADER CONFIGS */
@@ -29,12 +30,6 @@ header{
     background-color: white;
     background-size: cover;
     transition: 1s;
-}
-
-
-
-img#imgi{
-    padding-top: 50px;
 }
 
 div img {
@@ -65,6 +60,11 @@ div#titulo{
     max-width: 1000px;
     text-align: center;
     margin: auto;
+    padding: 50px 30px;
+}
+
+p#pi{
+    text-align: center;
 }
 
 div#titulo > img {
@@ -108,8 +108,9 @@ div#inverter{
     margin: 100px 0px;
 }
 p{
-    padding: 30px 20px;
+    padding: 30px 0px;
     font-family: "Libre Baskerville", serif;
+    text-align: justify;
 }
 
 img.invertz{
@@ -122,18 +123,46 @@ p.invertz{
     transition: 2s;
 }
 
+
 /* MAIN CONFIGS */
 
 main.normalmain{
     background-image: var(--cor-gradiente);
+    transition: 1s;
 }
 main.dark{
     background-image: var(--cor-normal);
+    transition: 1s;
 }
 
 main h2 {
     color: red;
     font-family: var(--letra-normal);
+    font-size: 3em;
 }
 
+section{
+    min-width: 350px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section#invertedworld{
+    padding: 100px 40px;
+    display: flex;
+}
+
+section#invertedworld > img{
+    max-width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+
+}
+
+@media screen and (min-width: 300px) and (max-width:750px) {
+    section#invertedworld {
+        display: block;
+    
+    }
+}
 
