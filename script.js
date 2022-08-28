@@ -8,7 +8,7 @@ function inverter(){
     var monster = document.getElementById('monstro')
     var main = document.getElementById('main')
 
-    if(invert.className == 'normal' && pi.className == 'normal' && imgi.className == 'normal' && kids.className == 'focus' && monster.className == 'defocus'){
+    if(invert.className == 'normal'){
         invert.classList.toggle('invert')
         pi.classList.toggle('invertz')
         imgi.classList.toggle('invertz')
