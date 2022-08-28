@@ -72,7 +72,7 @@ div#titulo > img {
 }
 
 #button{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.089);
     width: 250px;
     height: 50px;
     margin: auto;
@@ -88,7 +88,7 @@ div#titulo > img {
 }
 
 #button:hover{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.712);
     color: white;
     transition: 0.5s;
 }
@@ -193,6 +193,7 @@ section#netflix{
 
 p.white{
     color: white;
+    transition: 1s;
 }
 
 div#pics{
@@ -207,6 +208,7 @@ div#pics > img {
     border: 2px solid red;
     outline: 20px solid black;
     margin-left: 50px;
+    
 
 }
 

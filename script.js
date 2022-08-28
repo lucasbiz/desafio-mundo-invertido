@@ -1,3 +1,4 @@
+
 function inverter(){
 
     var invert = document.getElementById('inverter')
@@ -7,6 +8,9 @@ function inverter(){
     var kids = document.getElementById('kids')
     var monster = document.getElementById('monstro')
     var main = document.getElementById('main')
+    var mi = document.getElementById('mi')
+    var stv4 = document.getElementById('stv4')
+    var dd = document.getElementById('dd')
 
     if(invert.className == 'normal'){
         invert.classList.toggle('invert')
@@ -15,6 +19,9 @@ function inverter(){
         kids.classList.toggle('defocus')
         monster.classList.remove('defocus')
         monster.classList.add('focus')
+        mi.classList.add('white')
+        stv4.classList.add('white')
+        dd.classList.add('white')
         headergray.style.filter = 'saturate(0)'
         headergray.style.opacity = '0.6'
         main.style.backgroundImage = 'var(--cor-normal)'
@@ -30,9 +37,13 @@ function inverter(){
         kids.classList.add('focus')
         monster.classList.remove('focus')
         monster.classList.add('defocus')
+        mi.classList.remove('white')
+        stv4.classList.remove('white')
+        dd.classList.remove('white')
         headergray.style.filter = 'saturate(1)'
         headergray.style.opacity = '1'
         main.style.backgroundImage = 'var(--cor-gradiente)'
+
 
 
     }
