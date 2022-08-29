@@ -125,6 +125,10 @@ p.invertz{
 
 /* MAIN CONFIGS */
 
+main{
+    min-width: 300px;
+}
+
 main.normalmain{
     background-image: var(--cor-gradiente);
     transition: 1s;
@@ -215,7 +219,7 @@ div#pics > img {
 /* ADAPTAÇÃO AS TELAS PEQUENAS */
 
 
-@media screen and (min-width: 300px) and (max-width:750px) {
+@media screen and (min-width: 100px) and (max-width:750px) {
     section#invertedworld {
         display: block;  
     }
@@ -245,7 +249,7 @@ div#pics > img {
 
 /* ADAPTAÇÃO AS TELAS MUITO PEQUENAS */
 
-@media screen and (min-width:300px) and (max-width:400px) {
+@media screen and (min-width:100px) and (max-width:400px) {
 
     div >iframe{
         width: 250px;
