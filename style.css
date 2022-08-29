@@ -13,7 +13,7 @@
     --letra-normal: "Archivo", sans-serif;
     --letra-invertido: "Rubik Glitch", sans-serif;
     --cor-gradiente: linear-gradient(to bottom, white, white);
-    --cor-normal: black;
+    --cor-normal: linear-gradient(to bottom, black, rgb(46, 0, 0));
 }
 
 body{
@@ -133,16 +133,19 @@ main.normalmain{
     background-image: var(--cor-gradiente);
     transition: 1s;
 }
-main.dark{
-    background-image: var(--cor-normal);
-    transition: 1s;
+
+main.fontinvert h2{
+    font-family: var(--letra-invertido);
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
 
 main h2 {
-    color: red;
+    color: rgb(255, 0, 0);
     font-family: var(--letra-normal);
     font-size: 3em;
 }
+
 
 section{
     min-width: 300px;
@@ -212,8 +215,15 @@ div#pics > img {
     border: 2px solid red;
     outline: 20px solid black;
     margin-left: 50px;
-    
+}
 
+section#club{
+    text-align: center;
+}
+
+section#club > p{
+    padding: 40px;
+    margin: auto;
 }
 
 /* ADAPTAÇÃO AS TELAS PEQUENAS */
@@ -221,7 +231,8 @@ div#pics > img {
 
 @media screen and (min-width: 100px) and (max-width:750px) {
     section#invertedworld {
-        display: block;  
+        display: block;
+        padding: 30px;  
     }
 
     section#vol4{
@@ -251,16 +262,15 @@ div#pics > img {
 
 @media screen and (min-width:100px) and (max-width:400px) {
 
-    div >iframe{
+    div > iframe{
         width: 250px;
         transform: none;
     }
 
     div#iframe{
-        margin-left: 30px;
         margin: auto;
-      
     }
+
     div#vol4{
         margin-right: 40px;
     }
@@ -273,10 +283,14 @@ div#pics > img {
     }
     
     div#pics{
-        margin-left: -50px;
+        margin-left: -40px;
     }
 
-    section#netflix >h2{
+    section#netflix{
+        padding: 30px;
+    }
+
+    section#netflix > h2{
         margin-right: 50px;
     }
 

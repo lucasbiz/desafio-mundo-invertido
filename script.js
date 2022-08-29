@@ -25,6 +25,7 @@ function inverter(){
         headergray.style.filter = 'saturate(0)'
         headergray.style.opacity = '0.6'
         main.style.backgroundImage = 'var(--cor-normal)'
+        main.classList.add('fontinvert')
 
     } else {
         invert.classList.remove('invert')
