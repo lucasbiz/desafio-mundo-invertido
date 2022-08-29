@@ -219,12 +219,57 @@ div#pics > img {
 
 section#club{
     text-align: center;
+    padding-bottom: 50px;
+
 }
 
 section#club > p{
     padding: 40px;
     margin: auto;
 }
+
+div#formulario {
+    display: flex;
+    max-width: 600px;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 30px 30px 30px;
+    width: 80%;
+    background-color: rgb(173, 16, 16);
+    box-shadow: 10px 10px 1px black;
+}
+
+div#formulario > form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family:  "Libre Baskerville", serif;
+    color: white;
+}
+ div#formulario label {
+    padding: 20px 0px 5px 0px;
+ }
+
+ div#formulario input, textarea{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    
+ }
+
+ div#formulario textarea {
+    margin-bottom: 20px;
+ }
+
+ input#inscrever {
+    width: 200px;
+    height: 40px;
+    font-family: var(--letra-normal);
+    margin: auto;
+ }
+
+
 
 /* ADAPTAÇÃO AS TELAS PEQUENAS */
 
@@ -302,17 +347,6 @@ section#club > p{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:1000px) {
 
