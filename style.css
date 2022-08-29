@@ -212,20 +212,40 @@ div#pics > img {
 
 }
 
+/* ADAPTAÇÃO AS TELAS PEQUENAS */
+
+
 @media screen and (min-width: 300px) and (max-width:750px) {
     section#invertedworld {
-        display: block;
-    
+        display: block;  
     }
+
     section#vol4{
         display: flex;
         flex-direction: column-reverse;
-        padding: 0px;
+        padding: 10px;
     }
 
     div#vol4{
         margin-left: -40px;
     }
+
+    div#iframe{
+        margin: auto;      
+    }
+
+    section#invertedworld > img{
+        max-width: 80%;   
+    }
+
+    div >iframe{
+        transform: none;
+    }
+}
+
+/* ADAPTAÇÃO AS TELAS MUITO PEQUENAS */
+
+@media screen and (min-width:300px) and (max-width:400px) {
 
     div >iframe{
         width: 250px;
@@ -234,13 +254,47 @@ div#pics > img {
 
     div#iframe{
         margin-left: 30px;
+        margin: auto;
+      
+    }
+    div#vol4{
+        margin-right: 40px;
+    }
+    div#divinverted{
+        width: 60%;
+    }
+
+    main h2 {
+        font-size: 2.5em;
+    }
     
-    
+    div#pics{
+        margin-left: -50px;
+    }
+
+    section#netflix >h2{
+        margin-right: 50px;
+    }
+
+    div#pics>img{
+        width: 75vw;
+        height: 75vw;
+
     }
 
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1000px) {
 
