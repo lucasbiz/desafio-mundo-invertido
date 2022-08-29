@@ -31,7 +31,7 @@
                 <h2 class="h2"> O MUNDO INVERTIDO </h2>
                 <p class="black" id="mi" >O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazer tudo isso ao nosso mundo.</p>
             </div>
-            <img src="images/content/inverted-world.png" alt="Poster do mundo invertido">
+            <img id="postermi" src="images/content/inverted-world.png" alt="Poster do mundo invertido">
         </section>
 
         <section id="vol4">
@@ -57,16 +57,16 @@
             <h2 class="h2">O CLUBE DUNGEONS & DRAGONS</h2>
             <p class="black" id="dd">Para deter Vecna, os heróis de Stranger Things também precisam de você. O Clube de D&D mais famoso de Hawkings está com vagas abertas para sua próxima aventura. Se você é destemido, gosta de desafios e não tem medo de rodar o D20, chegou a hora de se inscrever para fazer parte da nova campanha.</p>
             <div id="formulario">
-                <form action="formulario.js" autocomplete="on">
+                <form autocomplete="on">
                     <label for="nome">Nome Completo: </label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" required>
                     <label for="email">E-mail: </label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required>
                     <label for="level">Level: </label>
-                    <input type="text" id="level">
+                    <input type="text" id="level" required>
                     <label for="personagem">Personagem: </label>
-                    <textarea id="personagem" cols="30" rows="10"></textarea>
-                    <input type="button" id="inscrever" value="ME INSCREVER">
+                    <textarea id="personagem" cols="30" rows="10"></textarea required>
+                    <input type="button" id="inscrever" value="ME INSCREVER" onclick="inscricao()">
 
                 </form>
             </div>
@@ -75,7 +75,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="foot">
+        <p>Projeto re-construído por &#x1F517<a href="https://www.linkedin.com/in/lucas-biz-teixeira/">Lucas Biz Teixeira</a> utilizando os recursos disponibilizados pela DIO_, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript.
+        </p>
+        <div id="imagemfinal"><img src="images/footer/tape.svg" alt="Imagem de uma fita de musica"></div>
 
     </footer>
 

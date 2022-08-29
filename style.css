@@ -167,6 +167,7 @@ section#invertedworld > img{
     max-width: 100%;
     height: auto;
     transform: rotate(180deg);
+    transition: 1s;
 
 
 }
@@ -207,6 +208,8 @@ div#pics{
     display: flex;
     padding: 50px 0px;
     width: 100%;
+    justify-content: center;
+    transition: 1s;
 }
 div#pics > img {
     width: 250px;
@@ -247,6 +250,7 @@ div#formulario > form{
     font-family:  "Libre Baskerville", serif;
     color: white;
 }
+
  div#formulario label {
     padding: 20px 0px 5px 0px;
  }
@@ -262,13 +266,56 @@ div#formulario > form{
     margin-bottom: 20px;
  }
 
- input#inscrever {
+input {
+    height: 20px;
+}
+
+input#inscrever {
     width: 200px;
-    height: 40px;
     font-family: var(--letra-normal);
     margin: auto;
+    height: 40px;
+    transition:.3s;
  }
 
+input#inscrever:hover{
+    background-color: white;
+    color: black;
+    transition:.5s;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    height: 150px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 109, 109);
+}
+
+footer a:hover {
+    text-decoration: underline;
+} 
+
+footer > p{
+    color: white;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    font-family:  "Libre Baskerville", serif;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+#imagemfinal {
+    opacity: 0.3;
+    display: flex;
+    position: absolute;
+    width: 200px;
+}
 
 
 /* ADAPTAÇÃO AS TELAS PEQUENAS */
@@ -300,6 +347,10 @@ div#formulario > form{
 
     div >iframe{
         transform: none;
+    }
+    #imagemfinal {
+        display: none;
+
     }
 }
 
